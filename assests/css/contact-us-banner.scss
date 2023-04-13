@@ -1,0 +1,69 @@
+.contact-us-banner{
+    background: url(/assests/images/contact-us_banner.png) no-repeat;
+    background-position: right center;
+    padding: 150px 0 50px;
+    background-size: 717px 358px;
+    .text{
+        h1{
+            font-size: 53px;
+            margin-bottom: 44px;
+            line-height: 70px;
+            color: #262626;
+            font-weight: 300;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        p{
+            color: #525252;
+            font-size: 22px;
+            line-height: 28px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            max-width: 79%;
+            margin-bottom: 20px;
+        }
+        .btn-primary{
+            margin-top: 12px;
+        }
+    }
+    .hide-in-large{
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .contact-us-banner{
+        background-size: 567px 320px;
+    }
+}
+
+@media (max-width:992px){
+    .contact-us-banner{
+        padding: 80px 0 50px;
+        background: none !important;
+        .row{
+            flex-flow: column-reverse;
+        }
+        .text{
+            p{
+                max-width: 100%;
+            }
+        }
+        .hide-in-large{
+            display: block;
+            img{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    .contact-us-banner{
+        margin-bottom: 0;
+        .text{
+            h1{
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+    }
+}

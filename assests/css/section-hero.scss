@@ -1,0 +1,131 @@
+.section--hero{
+    background: url(/assests/images/hero_image.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 45px;
+    padding: 243px 0 291px;
+    min-height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero_text{
+        h1{
+            font-size: 85px;
+            line-height: 105%;
+            max-width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-weight: 300;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            text-shadow: -43px 0px 17px rgba(0, 0, 0, 0.03), -24px 0px 14px rgba(0, 0, 0, 0.11), -11px 0px 11px rgba(0, 0, 0, 0.2), -3px 0px 6px rgba(0, 0, 0, 0.22), 0px 0px 0px rgba(0, 0, 0, 0.23);
+        }
+    }
+}
+
+.ai--machine-learning,
+.autonomy-Robotics{
+    background: url(/assests/images/AI\ &\ Landing_page\ hero.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    .hero_text{
+        h3{
+            font-size: 58px;
+            line-height: 61px;
+            font-weight: 300;
+            max-width: 644px;
+            text-align: center;
+            margin: 0 auto;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+    }
+}
+@media (max-width:1024px) {
+    .ai--machine-learning, .autonomy-Robotics{
+        margin-bottom: 0;
+        .hero_text{
+            h3{
+                font-size: 48px;
+                line-height: 58px;
+                max-width: unset;
+            }
+        }
+    }
+}
+@media (max-width:767px){
+    .ai--machine-learning, .autonomy-Robotics{
+        .hero_text{
+            h3{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+.autonomy-Robotics{
+    background: url(/assests/images/Autonomy\ &\ Robotics_hero.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    .hero_text{
+        h3{
+            max-width: unset;
+        }
+    }
+}
+
+.cybersecurity_hero, .defense--aerospace, .space{
+    background: url(/assests/images/Cybersecurity_hero.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.defense--aerospace{
+    background: url(/assests/images/defense-aerospace_hero.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.space{
+    background: url(/assests/images/space_hero.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media (max-width:1024px) {
+    .section--hero{
+        .hero_text{
+            h1{
+                font-size: 64px;
+                line-height: 74px;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    .section--hero{
+        padding: 190px 0;
+        margin-top: 43px;
+    }
+}
+
+@media (max-width:425px){
+    .section--hero{
+        padding: 150px 0;
+        min-height: 100%;
+        .hero_text{
+            h1{
+                font-size: 46px;
+                line-height: 60px;
+            }
+        }
+    }
+}

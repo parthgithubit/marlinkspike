@@ -1,0 +1,108 @@
+.section--common-portfolio{
+    padding: 70px 0 110px;
+    .section_title{
+        h1{
+            font-size: 57px;
+            line-height: 67px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            max-width: 48%;
+        }
+    }
+    .portfolio_text{
+        max-width: 417px;
+        img{
+            margin-bottom: 55px;
+        }
+        h2{
+            font-size: 33px;
+            line-height: 43px;
+        }
+        p{
+            color: #4E545B;
+            line-height: 25px;
+        }
+    }
+}
+
+.even{
+    padding: 70px 0 50px;
+}
+
+.row-details{
+    margin-top: 53px;
+    flex-flow: row-reverse;
+    .portfolio_text{
+        margin-left: auto;
+        p{
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .section--common-portfolio{
+        .section_title{
+            h1{
+                font-size: 38px;
+                line-height: 48px;
+                margin-bottom: 30px;
+            }
+        }
+        .portfolio_text{
+            h2{
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+    }
+}
+@media (max-width:992px){
+    .section--common-portfolio.aerospace{
+        .portfolio_text{
+            margin-left: inherit !important;
+        }
+    }
+}
+@media (max-width:767px){
+    .section--common-portfolio.even, .section--common-portfolio{
+        padding: 50px 0;
+        .section_title{
+            h1{
+                font-size: 40px;
+                line-height: 50px;
+                max-width: 100%;
+            }
+        }
+        .portfolio_text{
+            max-width: unset;
+            img{
+                margin-bottom: 40px;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section--common-portfolio, .section--common-portfolio.aerospace{
+        padding: 50px 0;
+        .section_title{
+            h1{
+                font-size: 40px;
+                line-height: 50px;
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+        .row-details{
+            flex-flow: column;
+            margin-top: 30px;
+            .portfolio_text{
+                .btn-primary{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+

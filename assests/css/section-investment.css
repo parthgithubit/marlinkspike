@@ -1,0 +1,73 @@
+.section--investment {
+  padding: 70px 0;
+  margin-bottom: 0;
+}
+.section--investment .section_title h1 {
+  font-size: 57px;
+  line-height: 66px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 80px;
+  padding-left: 25px;
+  margin-right: 60%;
+}
+.section--investment .investment-blog {
+  margin-bottom: 60px;
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section--investment .investment-blog img {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.section--investment .investment-blog h3 {
+  color: #262626;
+  font-weight: 400;
+}
+.section--investment .investment-blog .explore-more {
+  color: #0F62FE;
+  line-height: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.section--investment .investment-blog .explore-more svg {
+  margin-left: 10px;
+  display: inline-block;
+  transform: translateX(0px);
+  transition: transform 0.3s ease-out;
+}
+.section--investment .investment-blog .explore-more:hover svg {
+  transform: translateX(5px);
+}
+
+@media (max-width: 767px) {
+  .section--investment {
+    padding: 40px 0;
+  }
+  .section--investment .section_title h1 {
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 60px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .section--investment .investment-blog {
+    max-width: 100%;
+  }
+  .section--investment .investment-blog h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 425px) {
+  .section--investment {
+    padding: 20px 0;
+  }
+  .section--investment .section_title h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .section--investment .investment-blog {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=section-investment.css.map */

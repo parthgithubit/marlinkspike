@@ -1,0 +1,205 @@
+.tab--section {
+  padding: 83px 0;
+}
+.tab--section .tab_button ul {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 64px;
+}
+.tab--section .tab_button ul li .nav-link {
+  padding: 13px 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important;
+  color: #525252;
+  font-size: 18px;
+  line-height: 16px;
+  display: inline-block;
+  transition: none;
+}
+.tab--section .tab_button ul li .nav-link:hover {
+  color: #161616;
+}
+.tab--section .tab_button ul li .nav-link:hover {
+  border-color: transparent;
+}
+.tab--section .tab_button ul li .nav-link.active {
+  border-bottom: 2px solid #0062FF !important;
+  font-weight: 600;
+  color: #161616;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+.tab--section .tab_text {
+  max-width: 80%;
+}
+.tab--section .tab_text h2 {
+  color: #000000;
+  line-height: 43px;
+  margin-bottom: 18px;
+}
+.tab--section .tab_text p {
+  line-height: 25px;
+  color: #4E545B;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 767px) {
+  .tab--section {
+    padding: 40px 0;
+  }
+  .tab--section .tab_button ul {
+    display: block;
+  }
+  .tab--section .tab_button ul li a {
+    width: 100%;
+    text-align: center;
+  }
+  .tab--section .tab-content .row {
+    flex-flow: column-reverse;
+  }
+  .tab--section .tab-content .tab_text {
+    max-width: 100%;
+  }
+  .tab--section .tab-content .tab_image {
+    margin-bottom: 20px;
+  }
+}
+.our-team {
+  padding: 56px 0 30px;
+}
+.our-team .tab_info {
+  background: #F2F4F8;
+  margin-bottom: 40px;
+}
+.our-team .tab_info img:not(:last-child) {
+  width: 100%;
+  max-height: 279px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-team .tab_info .info_text {
+  padding: 16px 22px;
+}
+.our-team .tab_info .info_text h4 {
+  line-height: 27.35px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.our-team .tab_info .info_text p {
+  color: #4E545B;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+.our-team .tab_info .info_text .tab_list {
+  list-style-type: disc;
+  padding-left: 20px;
+  min-height: 107px;
+}
+.our-team .tab_info .info_text .tab_list li {
+  font-size: 14px;
+  color: #4E545B;
+}
+.our-team .tab_info .info_text .tab_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.our-team .tab_info .info_text .tab_content i {
+  font-size: 20px;
+  color: #7D7D7D;
+  transition: 0.4s all;
+}
+.our-team .tab_info .info_text .tab_content i:hover {
+  color: #0062FF;
+}
+.our-team .tab_info .info_text .tab_content a img {
+  width: auto !important;
+  display: inline-block;
+  transform: translateX(0px);
+  transition: transform 0.3s ease-out;
+}
+.our-team .tab_info .info_text .tab_content a:hover img {
+  transform: translateX(5px);
+}
+
+@media (max-width: 767px) {
+  .our-team {
+    margin-bottom: 0;
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1099;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal .modal-lg {
+  max-width: 76%;
+  margin: 30px auto;
+  pointer-events: visible;
+}
+.modal .modal-lg .model_box {
+  background: #FFFFFF;
+  padding: 100px 112px;
+  position: relative;
+}
+.modal .modal-lg .model_box .model-text h3 {
+  line-height: 27px;
+}
+.modal .modal-lg .model_box .model-text p {
+  line-height: 25px;
+  color: #4E545B;
+  margin-bottom: 36px;
+}
+.modal .modal-lg .model_box .model-text ul {
+  margin-bottom: 36px;
+  list-style-type: disc;
+  padding-left: 18px;
+}
+.modal .modal-lg .model_box .model-text ul li {
+  color: #4E545B;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+}
+.modal .modal-lg .model_box .close {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
+  padding-right: 17px !important;
+}
+
+@media (max-width: 1200px) {
+  .modal-open {
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .modal .modal-lg .model_box .model-image img {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .modal .modal-lg {
+    max-width: 90%;
+  }
+  .modal .modal-lg .model_box {
+    padding: 70px 25px 30px;
+  }
+  .modal .modal-lg .model_box .model-image img {
+    width: 100%;
+  }
+  .modal .modal-lg .model_box .model-text img {
+    top: 1%;
+    right: 6%;
+  }
+}/*# sourceMappingURL=tab-section.css.map */

@@ -1,0 +1,61 @@
+.contact-us-banner {
+  background: url(/assests/images/contact-us_banner.png) no-repeat;
+  background-position: right center;
+  padding: 150px 0 50px;
+  background-size: 717px 358px;
+}
+.contact-us-banner .text h1 {
+  font-size: 53px;
+  margin-bottom: 44px;
+  line-height: 70px;
+  color: #262626;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.contact-us-banner .text p {
+  color: #525252;
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "IBM Plex Sans", sans-serif;
+  max-width: 79%;
+  margin-bottom: 20px;
+}
+.contact-us-banner .text .btn-primary {
+  margin-top: 12px;
+}
+.contact-us-banner .hide-in-large {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contact-us-banner {
+    background-size: 567px 320px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-us-banner {
+    padding: 80px 0 50px;
+    background: none !important;
+  }
+  .contact-us-banner .row {
+    flex-flow: column-reverse;
+  }
+  .contact-us-banner .text p {
+    max-width: 100%;
+  }
+  .contact-us-banner .hide-in-large {
+    display: block;
+  }
+  .contact-us-banner .hide-in-large img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us-banner {
+    margin-bottom: 0;
+  }
+  .contact-us-banner .text h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}/*# sourceMappingURL=contact-us-banner.css.map */

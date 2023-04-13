@@ -1,0 +1,160 @@
+.section--video{
+    padding: 100px 0;
+    background: #F2F4F8;
+    margin-bottom: 0;
+    .owl-carousel{
+        .video_text{
+            margin-bottom: 50px;
+            max-width: 700px;
+            h1{
+                font-size: 48px;
+                line-height: 52px;
+                min-height: 156px;
+                font-weight: 400;
+                padding-left: 20px;
+                position: relative;
+                &::before{
+                    content: open-quote;
+                    position: absolute;
+                    left: 0;
+                }
+                &::after{
+                    content: close-quote;
+                    position: absolute;
+                }
+            }
+            p{
+                font-size: 18px;
+                line-height: 25px;
+                color: #020202;
+                font-weight: 500;
+            }
+        }
+        .slider_video{
+            position: relative;
+            display: inline-flex;
+            justify-content: end;
+            width: 100%;
+            margin-bottom: 20px;
+            .myframe{
+                width: 760px;
+                height: 484px;
+            }
+            img{
+                position: absolute;
+                width: auto;
+                bottom: 30px;
+                right: 40px;
+                cursor: pointer;
+                z-index: 1;
+            }
+        }
+        .slider_video_active{
+            img{
+                opacity: 0;
+            }
+        }
+        .slider_video_active::after{
+            opacity: 0;
+            pointer-events: none;
+        }
+        .slider_image1::after, .slider_image2::after{
+            content: "";
+            background: url(/assests/images/man-image.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+        .slider_image2::after{
+            background: url(/assests/images/video_image.png);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+        .owl-nav{
+            .owl-prev, .owl-next{
+                position: relative;
+                height: 60px;
+                width: 60px;
+                background: #FFFFFF !important;
+                border-radius: 50%;
+                transition: all 0.35s ease;
+                &:hover{
+                    background: #0062FF !important;
+                }
+                &:hover img{
+                    filter: brightness(0) invert(1);
+                }
+            }
+            .owl-prev{
+                margin-right: 10px;
+                img{
+                    transform: rotate(180deg);
+                }
+            }
+            .owl-next{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .section--video{
+        .owl-carousel{
+            .video_text{
+                max-width: 100%;
+            }
+            .slider_video{
+                overflow: hidden;
+                padding-top: 56.25%;
+                .myframe{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                }
+                img{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+            .slider_image1::after, .slider_image2::after{
+                background-size: cover;
+            }
+            .owl-nav{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    .section--video{
+        padding: 50px 0;
+        [class*=col-] {
+            min-height: 1px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .owl-carousel{
+            .video_text{
+                h1{
+                    min-height: 120px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

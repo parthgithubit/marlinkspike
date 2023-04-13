@@ -1,0 +1,180 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+}
+// body.nav-open{
+//     overflow: hidden;
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dis-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.space-between{
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    transition: all 0.5s;
+    color: #C6C6C6;
+    &:hover{
+        color: #C6C6C6;
+    }
+}
+p{
+    margin-bottom: 0;
+}
+hr{
+    margin: 0;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer,
+ header,
+ main,
+ nav,
+ section {
+   display: block;
+   scroll-behavior: smooth !important;
+}
+section{
+    margin-bottom: 50px;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pl-0{
+    padding-left: 0;
+}
+.bg-sky-blue{
+    height: 48px;
+    width: 100%;
+    background-color: #0043AD;
+    opacity: 0.5;
+}
+.pr-0{
+    padding-right: 0;
+}
+.pt-70{
+    padding-top: 70px;
+}
+
+img{
+    max-width: 100%;
+}
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ .h1,
+ .h2,
+ .h3,
+ .h4
+ .h5,
+ .h6 {
+    font-family: 'Inter', sans-serif;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.25;
+    color: #000000;
+}
+[class*='col-']{
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 15px 17px;
+    background: #0062FF;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border: 2px solid transparent;
+    svg{
+        margin-left: 20px;
+        transition: all 0.5s;
+    }
+    &:hover{
+        border: 2px solid #161616;
+        background-color: #161616;
+        color: #FFFFFF;
+    }
+    
+}
+
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 992px){
+    section{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 375px){
+    .btn-primary{
+        padding: 13px;
+    }
+}
+
+
+@import "header.scss";
+
+@import "section-hero.scss";
+
+@import "section-portfolio";
+
+@import "section-investment";
+
+@import "section-video";
+
+@import "section-different";
+
+@import "footer.scss";
+
+@import "tab-section.scss";
+
+@import "section-testimonial";
+
+@import "section-contact";
+
+@import "section-news";
+
+@import ".section-common-portfolio";
+
+@import "section-info-two";
+
+@import "section-blog";
+
+@import "section-info";
+
+@import "contact-us-banner";
+
+@import "section-our-team"

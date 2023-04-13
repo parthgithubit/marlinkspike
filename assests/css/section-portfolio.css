@@ -1,0 +1,51 @@
+.section--portfolio {
+  background: url(/assests/images/portfolio-bg-img.png) no-repeat #000000;
+  padding: 128px 0;
+}
+.section--portfolio h2 {
+  font-size: 57px;
+  line-height: 66px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  padding-left: 230px;
+}
+.section--portfolio .portfolio {
+  padding-left: 200px;
+}
+.section--portfolio .portfolio [class*=col-] {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.section--portfolio .portfolio [class*=col-]:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .section--portfolio .portfolio img {
+    max-width: 85%;
+  }
+}
+@media (max-width: 767px) {
+  .section--portfolio {
+    padding: 100px 0;
+  }
+  .section--portfolio h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .section--portfolio .portfolio {
+    padding-left: 0;
+    text-align: center;
+  }
+  .section--portfolio .portfolio img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .section--portfolio {
+    padding: 70px 0;
+  }
+  .section--portfolio h2 {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=section-portfolio.css.map */

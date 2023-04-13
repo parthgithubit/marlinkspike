@@ -1,0 +1,119 @@
+.section--info{
+    padding: 30px 0;
+    .info_text{
+        h3{
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 22px;
+            line-height: 28px;
+            color: #525252;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+    }
+}
+@media (max-width:992px) {
+   .section--info{
+    .info_text{
+        h3{
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 30px;
+        }
+    }
+   }
+}
+
+.section--info-numbers{
+    padding: 70px 0 0;
+    margin-bottom: 0;
+    .info_text{
+        // max-width: 70%;
+        h2{
+            font-size: 57px;
+            line-height: 67px;
+            margin-bottom: 46px
+        }
+        p{
+            line-height: 25px;
+            color: #4E545B;
+            margin-right: 30px;
+        }
+    }
+    .info_num{
+        margin-bottom: 104px;
+        h1{
+            font-size: 92px;
+            line-height: 43px;
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 24px;
+            line-height: 33px;
+            font-weight: 400;
+            color: #000000;
+        }
+    }
+    h3{
+        font-size: 32px;
+        line-height: 38px;
+        color: #000200;
+        font-weight: 400;
+    }
+   
+}
+@media (max-width:1200px){
+    .section--info-numbers{
+        .info_num{
+           h1{
+                font-size: 72px;
+           }
+        }
+    }
+}
+@media (max-width:992px){
+    .section--info-numbers{
+        .info_text{
+            p{
+                margin-bottom: 50px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    .section--info-numbers{
+        padding: 40px 0 0;
+        .info_text{
+            // max-width: 100%;
+            h2{
+                font-size: 38px;
+                line-height: 48px;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .info_num{
+            margin-bottom: 0;
+            h1{
+                font-size: 48px;
+                margin:40px 0px 20px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 8px;
+            }
+        }
+        h3{
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 40px;
+        }
+    }
+}
